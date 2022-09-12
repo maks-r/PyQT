@@ -1,17 +1,20 @@
 #Загрузка клиента
 import json
 import socket
-import logs.configs.client_log_config
 from datetime import time
 import time
+import os
+import sys
+import logging
+
+sys.path.append(os.path.join(os.getcwd(), '..'))
+
+import logs.configs.client_log_config
 from utils.errors import ReqFieldMissingError, ServerError
 from utils.config_messages import get_msg, send_msg
 from client.client_msg import response_server, user_presence, ClientReader, ClientSender, create_parser
 from utils.settings import *
-import os
-import sys
 
-sys.path.append(os.path.join(os.getcwd(), '..'))
 
 LOG = logging.getLogger('client')
 

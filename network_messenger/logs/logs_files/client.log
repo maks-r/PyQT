@@ -1367,3 +1367,126 @@ hi 27532
 2022-09-07 14:42:11,211 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 22200
 2022-09-07 14:42:11,211 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 22200
 2022-09-07 14:42:11,212 DEBUG run_client.py Запущены процессы 22200
+2022-09-07 17:27:08,879 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 20768
+2022-09-07 17:38:47,186 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 3048
+2022-09-07 17:38:51,643 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: Maks 3048
+2022-09-07 17:38:53,679 CRITICAL run_client.py Не удалось подключиться к серверу 127.0.0.1:7777,отклонен запрос на подключение 3048
+2022-09-07 17:39:41,691 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 12804
+2022-09-07 17:39:46,826 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: tets 12804
+2022-09-07 17:39:46,827 DEBUG client_msg.py Сформировано presence сообщение для пользователя tets 12804
+2022-09-07 17:39:46,828 DEBUG run_client.py Функция user_presence ('tets',), {} вызвана из функции main 12804
+2022-09-07 17:39:46,828 DEBUG run_client.py Функция send_msg (<socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55352), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662561586.8271542, 'user': {'account_name': 'tets'}}), {} вызвана из функции main 12804
+2022-09-07 17:39:47,335 DEBUG run_client.py Функция get_msg (<socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55352), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 12804
+2022-09-07 17:39:47,335 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 12804
+2022-09-07 17:39:47,336 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 12804
+2022-09-07 17:39:47,336 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 12804
+2022-09-07 17:39:47,337 DEBUG run_client.py Запущены процессы 12804
+2022-09-12 13:16:20,758 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 25840
+2022-09-12 13:16:27,932 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: vfrs 25840
+2022-09-12 13:16:29,974 CRITICAL run_client.py Не удалось подключиться к серверу 127.0.0.1:7777,отклонен запрос на подключение 25840
+2022-09-12 13:52:58,745 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 12192
+2022-09-12 13:53:02,509 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: maks 12192
+2022-09-12 13:53:02,510 DEBUG client_msg.py Сформировано presence сообщение для пользователя maks 12192
+2022-09-12 13:53:02,511 DEBUG run_client.py Функция user_presence ('maks',), {} вызвана из функции main 12192
+2022-09-12 13:53:02,511 DEBUG run_client.py Функция send_msg (<socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55692), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662979982.5104904, 'user': {'account_name': 'maks'}}), {} вызвана из функции main 12192
+2022-09-12 13:53:02,514 DEBUG run_client.py Функция get_msg (<socket.socket fd=348, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55692), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 12192
+2022-09-12 13:53:02,514 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 12192
+2022-09-12 13:53:02,515 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 12192
+2022-09-12 13:53:02,515 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 12192
+2022-09-12 13:53:02,516 DEBUG run_client.py Запущены процессы 12192
+2022-09-12 13:57:08,463 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 11580
+2022-09-12 13:57:11,953 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: maks 11580
+2022-09-12 13:57:11,954 DEBUG client_msg.py Сформировано presence сообщение для пользователя maks 11580
+2022-09-12 13:57:11,955 DEBUG run_client.py Функция user_presence ('maks',), {} вызвана из функции main 11580
+2022-09-12 13:57:11,955 DEBUG run_client.py Функция send_msg (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55921), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662980231.9542491, 'user': {'account_name': 'maks'}}), {} вызвана из функции main 11580
+2022-09-12 13:57:12,458 DEBUG run_client.py Функция get_msg (<socket.socket fd=392, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55921), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 11580
+2022-09-12 13:57:12,458 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 11580
+2022-09-12 13:57:12,458 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 11580
+2022-09-12 13:57:12,459 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 11580
+2022-09-12 13:57:12,459 DEBUG run_client.py Запущены процессы 11580
+2022-09-12 13:58:59,570 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 19412
+2022-09-12 13:58:59,608 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 400, 'error': 'Bad Request'} 19412
+2022-09-12 13:58:59,610 DEBUG client_msg.py Разбор сообщения от сервера: {'error': 'Bad Request'} 19412
+2022-09-12 13:59:32,490 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 13176
+2022-09-12 13:59:32,517 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 400, 'error': 'Bad Request'} 13176
+2022-09-12 13:59:32,518 DEBUG client_msg.py Разбор сообщения от сервера: {'error': 'Bad Request'} 13176
+2022-09-12 14:05:34,686 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 22752
+2022-09-12 14:05:34,687 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: test1 22752
+2022-09-12 14:05:34,688 DEBUG client_msg.py Сформировано presence сообщение для пользователя test1 22752
+2022-09-12 14:05:34,688 DEBUG run_client.py Функция user_presence ('test1',), {} вызвана из функции main 22752
+2022-09-12 14:05:34,689 DEBUG run_client.py Функция send_msg (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56270), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662980734.6887214, 'user': {'account_name': 'test1'}}), {} вызвана из функции main 22752
+2022-09-12 14:05:34,718 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 24104
+2022-09-12 14:05:34,719 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: test3 24104
+2022-09-12 14:05:34,720 DEBUG client_msg.py Сформировано presence сообщение для пользователя test3 24104
+2022-09-12 14:05:34,721 DEBUG run_client.py Функция user_presence ('test3',), {} вызвана из функции main 24104
+2022-09-12 14:05:34,722 DEBUG run_client.py Функция send_msg (<socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56271), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662980734.7207212, 'user': {'account_name': 'test3'}}), {} вызвана из функции main 24104
+2022-09-12 14:05:34,723 DEBUG run_client.py Функция get_msg (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56270), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 22752
+2022-09-12 14:05:34,723 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 22752
+2022-09-12 14:05:34,724 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 22752
+2022-09-12 14:05:34,724 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 22752
+2022-09-12 14:05:34,725 DEBUG run_client.py Запущены процессы 22752
+2022-09-12 14:05:34,730 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 19384
+2022-09-12 14:05:34,730 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: test4 19384
+2022-09-12 14:05:34,731 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 25972
+2022-09-12 14:05:34,731 DEBUG client_msg.py Сформировано presence сообщение для пользователя test4 19384
+2022-09-12 14:05:34,731 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: test2 25972
+2022-09-12 14:05:34,732 DEBUG run_client.py Функция user_presence ('test4',), {} вызвана из функции main 19384
+2022-09-12 14:05:34,732 DEBUG client_msg.py Сформировано presence сообщение для пользователя test2 25972
+2022-09-12 14:05:34,732 DEBUG run_client.py Функция send_msg (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56272), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662980734.731721, 'user': {'account_name': 'test4'}}), {} вызвана из функции main 19384
+2022-09-12 14:05:34,733 DEBUG run_client.py Функция user_presence ('test2',), {} вызвана из функции main 25972
+2022-09-12 14:05:34,734 DEBUG run_client.py Функция send_msg (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56273), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662980734.7327213, 'user': {'account_name': 'test2'}}), {} вызвана из функции main 25972
+2022-09-12 14:05:34,734 DEBUG run_client.py Функция get_msg (<socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56271), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 24104
+2022-09-12 14:05:34,734 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 24104
+2022-09-12 14:05:34,735 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 24104
+2022-09-12 14:05:34,735 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 24104
+2022-09-12 14:05:34,736 DEBUG run_client.py Запущены процессы 24104
+2022-09-12 14:05:34,737 DEBUG run_client.py Функция get_msg (<socket.socket fd=388, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56272), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 19384
+2022-09-12 14:05:34,737 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 19384
+2022-09-12 14:05:34,737 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 19384
+2022-09-12 14:05:34,737 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 19384
+2022-09-12 14:05:34,738 DEBUG run_client.py Запущены процессы 19384
+2022-09-12 14:05:34,739 DEBUG run_client.py Функция get_msg (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56273), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 25972
+2022-09-12 14:05:34,739 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 25972
+2022-09-12 14:05:34,739 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 25972
+2022-09-12 14:05:34,739 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 25972
+2022-09-12 14:05:34,740 DEBUG run_client.py Запущены процессы 25972
+2022-09-12 16:03:42,792 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 11816
+2022-09-12 16:03:48,431 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: test1 11816
+2022-09-12 16:03:48,432 DEBUG client_msg.py Сформировано presence сообщение для пользователя test1 11816
+2022-09-12 16:03:48,433 DEBUG run_client.py Функция user_presence ('test1',), {} вызвана из функции main 11816
+2022-09-12 16:03:48,433 DEBUG run_client.py Функция send_msg (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55492), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662987828.4321787, 'user': {'account_name': 'test1'}}), {} вызвана из функции main 11816
+2022-09-12 16:03:48,965 DEBUG run_client.py Функция get_msg (<socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 55492), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 11816
+2022-09-12 16:03:48,965 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 11816
+2022-09-12 16:03:48,966 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 11816
+2022-09-12 16:03:48,966 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 11816
+2022-09-12 16:03:48,967 DEBUG run_client.py Запущены процессы 11816
+2022-09-12 16:33:37,588 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 24904
+2022-09-12 16:33:37,589 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: test1 24904
+2022-09-12 16:33:37,590 DEBUG client_msg.py Сформировано presence сообщение для пользователя test1 24904
+2022-09-12 16:33:37,591 DEBUG run_client.py Функция user_presence ('test1',), {} вызвана из функции main 24904
+2022-09-12 16:33:37,591 DEBUG run_client.py Функция send_msg (<socket.socket fd=312, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61789), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662989617.5901542, 'user': {'account_name': 'test1'}}), {} вызвана из функции main 24904
+2022-09-12 16:33:37,596 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 17924
+2022-09-12 16:33:37,596 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: test2 17924
+2022-09-12 16:33:37,597 DEBUG client_msg.py Сформировано presence сообщение для пользователя test2 17924
+2022-09-12 16:33:37,597 DEBUG run_client.py Функция user_presence ('test2',), {} вызвана из функции main 17924
+2022-09-12 16:33:37,598 DEBUG run_client.py Функция send_msg (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61790), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662989617.597155, 'user': {'account_name': 'test2'}}), {} вызвана из функции main 17924
+2022-09-12 16:33:37,618 DEBUG run_client.py Функция get_msg (<socket.socket fd=312, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61789), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 24904
+2022-09-12 16:33:37,618 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 24904
+2022-09-12 16:33:37,618 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 24904
+2022-09-12 16:33:37,618 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 24904
+2022-09-12 16:33:37,620 DEBUG run_client.py Запущены процессы 24904
+2022-09-12 16:33:38,137 DEBUG run_client.py Функция get_msg (<socket.socket fd=328, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61790), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 17924
+2022-09-12 16:33:38,137 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 17924
+2022-09-12 16:33:38,137 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 17924
+2022-09-12 16:33:38,137 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 17924
+2022-09-12 16:33:38,139 DEBUG run_client.py Запущены процессы 17924
+2022-09-12 16:34:53,072 DEBUG run_client.py Функция create_parser (), {} вызвана из функции main 18164
+2022-09-12 16:34:58,113 INFO run_client.py Запущен пользователь: адрес сервера: 127.0.0.1, порт: 7777, имя: Maks 18164
+2022-09-12 16:34:58,114 DEBUG client_msg.py Сформировано presence сообщение для пользователя Maks 18164
+2022-09-12 16:34:58,115 DEBUG run_client.py Функция user_presence ('Maks',), {} вызвана из функции main 18164
+2022-09-12 16:34:58,115 DEBUG run_client.py Функция send_msg (<socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61839), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1662989698.114059, 'user': {'account_name': 'Maks'}}), {} вызвана из функции main 18164
+2022-09-12 16:34:58,634 DEBUG run_client.py Функция get_msg (<socket.socket fd=380, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61839), raddr=('127.0.0.1', 7777)>,), {} вызвана из функции main 18164
+2022-09-12 16:34:58,635 DEBUG client_msg.py Разбор сообщения от сервера: {'response': 200} 18164
+2022-09-12 16:34:58,635 DEBUG run_client.py Функция response_server ({'response': 200},), {} вызвана из функции main 18164
+2022-09-12 16:34:58,635 INFO run_client.py Установлено соединение!Принят ответ от сервера 200 : Соединение установлено 18164
+2022-09-12 16:34:58,636 DEBUG run_client.py Запущены процессы 18164

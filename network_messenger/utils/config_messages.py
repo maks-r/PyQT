@@ -1,7 +1,8 @@
 import json
 import sys
+import os
 
-sys.path.append('../')
+sys.path.append(os.path.join(os.getcwd(), '..'))
 
 from utils.errors import IncorrectDataRecivedError, NonDictInputError
 from utils.decorators import log

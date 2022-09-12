@@ -1,9 +1,12 @@
 import subprocess
 from tkinter import Entry, Button, Tk, Label, messagebox, StringVar
-from utils.settings import *
 import os
 import sys
+
 sys.path.append(os.path.join(os.getcwd(), '..'))
+from utils.settings import *
+
+
 
 
 class Launcher:

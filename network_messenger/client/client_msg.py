@@ -3,7 +3,11 @@ import logging
 import socket
 import sys
 import json
+import os
 import threading
+
+sys.path.append(os.path.join(os.getcwd(), '..'))
+
 from utils.errors import ReqFieldMissingError, ServerError, IncorrectDataRecivedError
 import time
 import logs.configs.client_log_config
@@ -11,10 +15,6 @@ from utils.settings import *
 from utils.decorators import log
 from utils.config_messages import get_msg, send_msg
 from client.metaclass_client import ClientVerifier
-import os
-
-
-sys.path.append(os.path.join(os.getcwd(), '..'))
 
 
 LOG = logging.getLogger('client')

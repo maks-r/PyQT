@@ -1,9 +1,12 @@
 import logging
-import sys
 import os
+import sys
+
+sys.path.append(os.path.join(os.getcwd(), '..'))
+#sys.path.append('../')
+
 from utils.settings import *
 
-sys.path.append('../')
 
 ROOT = os.path.dirname('../logs/logs_files/')
 ROOT = os.path.join(ROOT, 'client.log')

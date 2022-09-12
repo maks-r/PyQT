@@ -1,15 +1,16 @@
+import unittest
 import sys
 import os
-import unittest
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from client.variables_client import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, TYPE, STATUS, ACTION, PRESENCE
-from client.client_msg import response_server, presence
+
+from utils.settings import *
+from client.client_msg import response_server, user_presence
 
 
 class TestClientClass(unittest.TestCase):
     def test_presence(self):
-        test = presence()
+        test = user_presence()
         test[TIME] = 1.1
         self.assertEqual(test, {ACTION: PRESENCE, TIME: 1.1, TYPE: STATUS, USER: {ACCOUNT_NAME: 'Maks', STATUS: 'Привет'}})
 

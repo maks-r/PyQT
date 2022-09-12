@@ -33,3 +33,5 @@ RESPONSE_400 = {
 MAX_CONNECTIONS = 5
 MAX_PACKAGE_LENGTH = 1024
 ENCODING = 'utf-8'
+
+SERVER_DATABASE = 'sqlite:///server_base.db3'

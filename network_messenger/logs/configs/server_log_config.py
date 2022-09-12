@@ -1,9 +1,11 @@
 import logging.handlers
 import sys
 import os
-from utils.settings import *
 
 sys.path.append('../')
+
+from utils.settings import *
+
 
 ROOT = os.path.dirname('../logs/logs_files/')
 ROOT = os.path.join(ROOT, 'server.log')

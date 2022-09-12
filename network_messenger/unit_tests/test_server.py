@@ -1,11 +1,12 @@
 """Unit-тесты сервера"""
-
+import unittest
 import sys
 import os
-import unittest
+
 sys.path.append(os.path.join(os.getcwd(), '..'))
-from common_files.constants import RESPONSE, ERROR, USER, ACCOUNT_NAME, TIME, ACTION, PRESENCE
-from server import process_client_message
+
+from utils.settings import *
+from server.server_msg import Server
 
 class TestServer(unittest.TestCase):
     '''
@@ -19,32 +20,32 @@ class TestServer(unittest.TestCase):
 
     def test_no_action(self):
         """Ошибка если нет действия"""
-        self.assertEqual(process_client_message(
+        self.assertEqual(Server(
             {TIME: '1.1', USER: {ACCOUNT_NAME: 'Guest'}}), self.err_dict)
 
     def test_wrong_action(self):
         """Ошибка если неизвестное действие"""
-        self.assertEqual(process_client_message(
+        self.assertEqual(Server(
             {ACTION: 'Wrong', TIME: '1.1', USER: {ACCOUNT_NAME: 'Guest'}}), self.err_dict)
 
     def test_no_time(self):
         """Ошибка, если  запрос не содержит штампа времени"""
-        self.assertEqual(process_client_message(
+        self.assertEqual(Server(
             {ACTION: PRESENCE, USER: {ACCOUNT_NAME: 'Guest'}}), self.err_dict)
 
     def test_no_user(self):
         """Ошибка - нет пользователя"""
-        self.assertEqual(process_client_message(
+        self.assertEqual(Server(
             {ACTION: PRESENCE, TIME: '1.1'}), self.err_dict)
 
     def test_unknown_user(self):
         """Ошибка - не Guest"""
-        self.assertEqual(process_client_message(
+        self.assertEqual(Server(
             {ACTION: PRESENCE, TIME: 1.1, USER: {ACCOUNT_NAME: 'Guest1'}}), self.err_dict)
 
     def test_ok_check(self):
         """Корректный запрос"""
-        self.assertEqual(process_client_message(
+        self.assertEqual(Server(
             {ACTION: PRESENCE, TIME: 1.1, USER: {ACCOUNT_NAME: 'Guest'}}), self.ok_dict)
 
 
