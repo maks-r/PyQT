@@ -1,6 +1,7 @@
 import argparse
 import logging
 import socket
+import threading
 import select
 import os
 import sys
@@ -8,20 +9,24 @@ import sys
 sys.path.append(os.path.join(os.getcwd(), '..'))
 
 import logs.configs.server_log_config
-from utils.config_messages import send_msg, get_msg
+from utils.config_messages import *
 from utils.settings import *
-from server.metaclass_server import ServerVerifier
+from metaclass_server import ServerVerifier
 from utils.server_socket_descriptor import Port
 from utils.decorators import log
+from dbase.server_db import ServerStorage
+
 
 SERVER_LOG = logging.getLogger('server')
+new_connection = False
+conflag_lock = threading.Lock()
 
 
 @log
-def create_parser():
+def create_parser(default_port, default_address):
     parser = argparse.ArgumentParser()
-    parser.add_argument('-p', default=DEFAULT_PORT, type=int, nargs='?')
-    parser.add_argument('-a', default='', nargs='?')
+    parser.add_argument('-p', default=default_port, type=int, nargs='?')
+    parser.add_argument('-a', default=default_address, nargs='?')
     namespace = parser.parse_args(sys.argv[1:])
     listen_address = namespace.a
     listen_port = namespace.p
@@ -72,8 +77,8 @@ class Server(metaclass=ServerVerifier):
             try:
                 if self.clients:
                     recovery_list, send_list, error_list = select.select(self.clients, self.clients, [], 0)
-            except OSError:
-                pass
+            except OSError as err:
+                SERVER_LOG.error(f'Ошибка работы с сокетами: {err}')
 
             if recovery_list:
                 for msg_client in recovery_list:
@@ -81,12 +86,17 @@ class Server(metaclass=ServerVerifier):
                         self.client_msg_proc(get_msg(msg_client), msg_client)
                     except:
                         SERVER_LOG.info(f'Клиент {msg_client.getpeername()} отключился от сервера.')
+                        for name in self.names:
+                            if self.names[name] == msg_client:
+                                self.database.user_logout(name)
+                                del self.names[name]
+                                break
                         self.clients.remove(msg_client)
 
             for msg in self.messages:
                 try:
                     self.process_message(msg, send_list)
-                except:
+                except (ConnectionAbortedError, ConnectionError, ConnectionResetError, ConnectionRefusedError):
                     SERVER_LOG.info(f'Связь с клиентом с именем {msg[DESTINATION]} была потеряна')
                     self.clients.remove(self.names[msg[DESTINATION]])
                     del self.names[msg[DESTINATION]]
@@ -109,25 +119,60 @@ class Server(metaclass=ServerVerifier):
             if message[USER][ACCOUNT_NAME] not in self.names.keys():
                 self.names[message[USER][ACCOUNT_NAME]] = client
                 client_ip, client_port = client.getpeername()
-                self.database.user_login(message[USER][ACCOUNT_NAME], client_ip, client_port)
+                self.database.user_login(
+                    message[USER][ACCOUNT_NAME], client_ip, client_port)
                 send_msg(client, RESPONSE_200)
+                with conflag_lock:
+                    new_connection = True
             else:
                 response = RESPONSE_400
-                response[ERROR] = 'Ошибка!!! Имя занято.'
+                response[ERROR] = 'Имя пользователя уже занято.'
                 send_msg(client, response)
                 self.clients.remove(client)
                 client.close()
             return
+
         elif ACTION in message and message[ACTION] == MESSAGE and \
                 DESTINATION in message and TIME in message \
-                and SENDER in message and MESSAGE_TEXT in message:
+                and SENDER in message and MESSAGE_TEXT in message and self.names[message[SENDER]] == client:
             self.messages.append(message)
+            self.database.process_message(message[SENDER], message[DESTINATION])
             return
-        elif ACTION in message and message[ACTION] == EXIT and ACCOUNT_NAME in message:
+
+        elif ACTION in message and message[ACTION] == EXIT and ACCOUNT_NAME in message \
+                and self.names[message[ACCOUNT_NAME]] == client:
+            self.database.user_logout(message[ACCOUNT_NAME])
+            SERVER_LOG.info(
+                f'Клиент {message[ACCOUNT_NAME]} корректно отключился от сервера.')
             self.clients.remove(self.names[message[ACCOUNT_NAME]])
             self.names[message[ACCOUNT_NAME]].close()
             del self.names[message[ACCOUNT_NAME]]
+            with conflag_lock:
+                new_connection = True
             return
+
+        elif ACTION in message and message[ACTION] == GET_CONTACTS and USER in message and \
+                self.names[message[USER]] == client:
+            response = RESPONSE_202
+            response[LIST_INFO] = self.database.get_contacts(message[USER])
+            send_msg(client, response)
+
+        elif ACTION in message and message[ACTION] == ADD_CONTACT and ACCOUNT_NAME in message and USER in message \
+                and self.names[message[USER]] == client:
+            self.database.add_contact(message[USER], message[ACCOUNT_NAME])
+            send_msg(client, RESPONSE_200)
+
+        elif ACTION in message and message[ACTION] == REMOVE_CONTACT and ACCOUNT_NAME in message and USER in message \
+                and self.names[message[USER]] == client:
+            self.database.remove_contact(message[USER], message[ACCOUNT_NAME])
+            send_msg(client, RESPONSE_200)
+
+        elif ACTION in message and message[ACTION] == USERS_REQUEST and ACCOUNT_NAME in message \
+                and self.names[message[ACCOUNT_NAME]] == client:
+            response = RESPONSE_202
+            response[LIST_INFO] = [user[0] for user in self.database.users_list()]
+            send_msg(client, response)
+
         else:
             response = RESPONSE_400
             response[ERROR] = 'Ошибка!!! Запрос некорректен.'

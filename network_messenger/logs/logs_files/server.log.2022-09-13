@@ -1,0 +1,213 @@
+2022-09-13 11:06:09,311 DEBUG run_server.py Функция create_parser (), {} вызвана из функции main 27080
+2022-09-13 11:06:09,360 INFO server_msg.py Запущен сервер с портом: 7777, через адрес: .Если адрес не указан, принимаются соединения с любых адресов. 27080
+2022-09-13 11:06:25,850 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53844) 27080
+2022-09-13 11:06:25,858 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53845) 27080
+2022-09-13 11:06:25,861 DEBUG server_msg.py Функция get_msg (<socket.socket fd=604, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53844)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:25,861 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056385.850465, 'user': {'account_name': 'test1'}} 27080
+2022-09-13 11:06:25,877 DEBUG server_msg.py Функция send_msg (<socket.socket fd=604, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53844)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:25,878 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53846) 27080
+2022-09-13 11:06:25,879 DEBUG server_msg.py Функция get_msg (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53845)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:25,879 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056385.8584952, 'user': {'account_name': 'test2'}} 27080
+2022-09-13 11:06:25,888 DEBUG server_msg.py Функция send_msg (<socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53845)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:25,889 DEBUG server_msg.py Функция get_msg (<socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53846)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:25,889 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056385.8614693, 'user': {'account_name': 'test3'}} 27080
+2022-09-13 11:06:25,900 DEBUG server_msg.py Функция send_msg (<socket.socket fd=552, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53846)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:26,923 INFO server_msg.py Клиент ('127.0.0.1', 53844) отключился от сервера. 27080
+2022-09-13 11:06:26,923 INFO server_msg.py Клиент ('127.0.0.1', 53845) отключился от сервера. 27080
+2022-09-13 11:06:26,924 INFO server_msg.py Клиент ('127.0.0.1', 53846) отключился от сервера. 27080
+2022-09-13 11:06:33,944 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53855) 27080
+2022-09-13 11:06:33,960 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53856) 27080
+2022-09-13 11:06:33,961 DEBUG server_msg.py Функция get_msg (<socket.socket fd=588, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53855)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:33,962 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056393.944836, 'user': {'account_name': 'test1'}} 27080
+2022-09-13 11:06:33,963 DEBUG server_msg.py Функция send_msg (<socket.socket fd=588, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53855)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:33,984 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53857) 27080
+2022-09-13 11:06:33,985 DEBUG server_msg.py Функция get_msg (<socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53856)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:33,986 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056393.9608595, 'user': {'account_name': 'test2'}} 27080
+2022-09-13 11:06:33,987 DEBUG server_msg.py Функция send_msg (<socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53856)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:33,999 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53858) 27080
+2022-09-13 11:06:34,000 DEBUG server_msg.py Функция get_msg (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53857)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:34,000 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056393.9848342, 'user': {'account_name': 'test3'}} 27080
+2022-09-13 11:06:34,001 DEBUG server_msg.py Функция send_msg (<socket.socket fd=344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53857)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:34,011 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53859) 27080
+2022-09-13 11:06:34,012 DEBUG server_msg.py Функция get_msg (<socket.socket fd=588, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53858)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:34,012 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056393.9988334, 'user': {'account_name': 'test4'}} 27080
+2022-09-13 11:06:34,025 DEBUG server_msg.py Функция send_msg (<socket.socket fd=588, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53858)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:34,025 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53860) 27080
+2022-09-13 11:06:34,026 DEBUG server_msg.py Функция get_msg (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53859)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:34,026 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056394.0108395, 'user': {'account_name': 'test6'}} 27080
+2022-09-13 11:06:34,035 DEBUG server_msg.py Функция send_msg (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53859)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:34,036 DEBUG server_msg.py Функция get_msg (<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53860)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:34,036 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056394.0118356, 'user': {'account_name': 'test5'}} 27080
+2022-09-13 11:06:34,046 DEBUG server_msg.py Функция send_msg (<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53860)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:35,048 INFO server_msg.py Клиент ('127.0.0.1', 53858) отключился от сервера. 27080
+2022-09-13 11:06:35,563 INFO server_msg.py Клиент ('127.0.0.1', 53859) отключился от сервера. 27080
+2022-09-13 11:06:35,564 INFO server_msg.py Клиент ('127.0.0.1', 53860) отключился от сервера. 27080
+2022-09-13 11:06:38,845 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53867) 27080
+2022-09-13 11:06:38,872 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53868) 27080
+2022-09-13 11:06:38,874 DEBUG server_msg.py Функция get_msg (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53867)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:38,874 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056398.8459094, 'user': {'account_name': 'test1'}} 27080
+2022-09-13 11:06:38,875 DEBUG server_msg.py Функция send_msg (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53867)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:38,886 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53869) 27080
+2022-09-13 11:06:38,887 DEBUG server_msg.py Функция get_msg (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53868)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:38,888 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056398.872909, 'user': {'account_name': 'test2'}} 27080
+2022-09-13 11:06:38,889 DEBUG server_msg.py Функция send_msg (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53868)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:38,901 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53870) 27080
+2022-09-13 11:06:38,902 DEBUG server_msg.py Функция get_msg (<socket.socket fd=564, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53869)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:38,902 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056398.8869097, 'user': {'account_name': 'test3'}} 27080
+2022-09-13 11:06:38,903 DEBUG server_msg.py Функция send_msg (<socket.socket fd=564, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53869)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:38,914 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53871) 27080
+2022-09-13 11:06:38,915 DEBUG server_msg.py Функция get_msg (<socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53870)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:38,915 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056398.9009075, 'user': {'account_name': 'test4'}} 27080
+2022-09-13 11:06:38,916 DEBUG server_msg.py Функция send_msg (<socket.socket fd=340, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53870)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:38,930 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53872) 27080
+2022-09-13 11:06:38,931 DEBUG server_msg.py Функция get_msg (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53871)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:38,932 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056398.914906, 'user': {'account_name': 'test5'}} 27080
+2022-09-13 11:06:38,933 DEBUG server_msg.py Функция send_msg (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53871)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:38,933 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53873) 27080
+2022-09-13 11:06:38,934 DEBUG server_msg.py Функция get_msg (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53872)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:38,934 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056398.9309075, 'user': {'account_name': 'test6'}} 27080
+2022-09-13 11:06:38,935 DEBUG server_msg.py Функция send_msg (<socket.socket fd=444, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53872)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:38,936 DEBUG server_msg.py Функция get_msg (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53873)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:38,936 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056398.931905, 'user': {'account_name': 'test7'}} 27080
+2022-09-13 11:06:38,946 DEBUG server_msg.py Функция send_msg (<socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53873)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:39,965 INFO server_msg.py Клиент ('127.0.0.1', 53873) отключился от сервера. 27080
+2022-09-13 11:06:46,170 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53886) 27080
+2022-09-13 11:06:46,184 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53887) 27080
+2022-09-13 11:06:46,185 DEBUG server_msg.py Функция get_msg (<socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53886)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,186 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.1702237, 'user': {'account_name': 'test1'}} 27080
+2022-09-13 11:06:46,188 DEBUG server_msg.py Функция send_msg (<socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53886)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:46,209 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53888) 27080
+2022-09-13 11:06:46,210 DEBUG server_msg.py Функция get_msg (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53887)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,211 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.18422, 'user': {'account_name': 'test2'}} 27080
+2022-09-13 11:06:46,212 DEBUG server_msg.py Функция send_msg (<socket.socket fd=576, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53887)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:46,229 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53889) 27080
+2022-09-13 11:06:46,230 DEBUG server_msg.py Функция get_msg (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53888)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,230 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.209221, 'user': {'account_name': 'test3'}} 27080
+2022-09-13 11:06:46,232 DEBUG server_msg.py Функция send_msg (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53888)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:46,248 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53890) 27080
+2022-09-13 11:06:46,250 DEBUG server_msg.py Функция get_msg (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53889)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,250 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.2282202, 'user': {'account_name': 'test4'}} 27080
+2022-09-13 11:06:46,251 DEBUG server_msg.py Функция send_msg (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53889)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:46,266 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53891) 27080
+2022-09-13 11:06:46,268 DEBUG server_msg.py Функция get_msg (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53890)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,268 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.2482195, 'user': {'account_name': 'test5'}} 27080
+2022-09-13 11:06:46,269 DEBUG server_msg.py Функция send_msg (<socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53890)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:46,282 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53892) 27080
+2022-09-13 11:06:46,283 DEBUG server_msg.py Функция get_msg (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53891)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,284 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.2662199, 'user': {'account_name': 'test6'}} 27080
+2022-09-13 11:06:46,285 DEBUG server_msg.py Функция send_msg (<socket.socket fd=640, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53891)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:46,298 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53893) 27080
+2022-09-13 11:06:46,300 DEBUG server_msg.py Функция get_msg (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53892)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,300 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.2822194, 'user': {'account_name': 'test7'}} 27080
+2022-09-13 11:06:46,301 DEBUG server_msg.py Функция send_msg (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53892)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:46,302 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 53894) 27080
+2022-09-13 11:06:46,303 DEBUG server_msg.py Функция get_msg (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53893)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,303 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.2982259, 'user': {'account_name': 'test8'}} 27080
+2022-09-13 11:06:46,318 DEBUG server_msg.py Функция send_msg (<socket.socket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53893)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:46,830 DEBUG server_msg.py Функция get_msg (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53894)>,), {} вызвана из функции main_loop 27080
+2022-09-13 11:06:46,831 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663056406.3022282, 'user': {'account_name': 'test9'}} 27080
+2022-09-13 11:06:46,841 DEBUG server_msg.py Функция send_msg (<socket.socket fd=544, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53894)>, {'response': 200}), {} вызвана из функции client_msg_proc 27080
+2022-09-13 11:06:47,347 INFO server_msg.py Клиент ('127.0.0.1', 53893) отключился от сервера. 27080
+2022-09-13 11:06:48,361 INFO server_msg.py Клиент ('127.0.0.1', 53894) отключился от сервера. 27080
+2022-09-13 12:55:41,594 DEBUG run_server.py Функция create_parser (), {} вызвана из функции main 18040
+2022-09-13 12:55:41,626 INFO server_msg.py Запущен сервер с портом: 7777, через адрес: .Если адрес не указан, принимаются соединения с любых адресов. 18040
+2022-09-13 12:55:54,733 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59552) 18040
+2022-09-13 12:55:55,239 DEBUG server_msg.py Функция get_msg (<socket.socket fd=652, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59552)>,), {} вызвана из функции main_loop 18040
+2022-09-13 12:55:55,240 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663062954.7337117, 'user': {'account_name': 'test1'}} 18040
+2022-09-13 12:55:55,254 DEBUG server_msg.py Функция send_msg (<socket.socket fd=652, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59552)>, {'response': 200}), {} вызвана из функции client_msg_proc 18040
+2022-09-13 12:56:19,000 INFO server_msg.py Клиент ('127.0.0.1', 59552) отключился от сервера. 18040
+2022-09-13 12:56:30,835 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59571) 18040
+2022-09-13 12:56:30,846 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59572) 18040
+2022-09-13 12:56:30,847 DEBUG server_msg.py Функция get_msg (<socket.socket fd=608, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59571)>,), {} вызвана из функции main_loop 18040
+2022-09-13 12:56:30,848 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663062990.8351934, 'user': {'account_name': 'test1'}} 18040
+2022-09-13 12:56:30,849 DEBUG server_msg.py Функция send_msg (<socket.socket fd=608, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59571)>, {'response': 400, 'error': 'Ошибка!!! Имя занято.'}), {} вызвана из функции client_msg_proc 18040
+2022-09-13 12:56:30,861 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59573) 18040
+2022-09-13 12:56:30,862 DEBUG server_msg.py Функция get_msg (<socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59572)>,), {} вызвана из функции main_loop 18040
+2022-09-13 12:56:30,862 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663062990.8461916, 'user': {'account_name': 'test2'}} 18040
+2022-09-13 12:56:30,872 DEBUG server_msg.py Функция send_msg (<socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59572)>, {'response': 200}), {} вызвана из функции client_msg_proc 18040
+2022-09-13 12:56:30,873 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59574) 18040
+2022-09-13 12:56:30,874 DEBUG server_msg.py Функция get_msg (<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59573)>,), {} вызвана из функции main_loop 18040
+2022-09-13 12:56:30,874 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663062990.861202, 'user': {'account_name': 'test3'}} 18040
+2022-09-13 12:56:30,881 DEBUG server_msg.py Функция send_msg (<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59573)>, {'response': 200}), {} вызвана из функции client_msg_proc 18040
+2022-09-13 12:56:30,881 DEBUG server_msg.py Функция get_msg (<socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59574)>,), {} вызвана из функции main_loop 18040
+2022-09-13 12:56:30,882 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663062990.8621905, 'user': {'account_name': 'test4'}} 18040
+2022-09-13 12:56:30,887 DEBUG server_msg.py Функция send_msg (<socket.socket fd=632, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59574)>, {'response': 200}), {} вызвана из функции client_msg_proc 18040
+2022-09-13 12:56:48,098 INFO server_msg.py Клиент ('127.0.0.1', 59572) отключился от сервера. 18040
+2022-09-13 12:56:48,600 INFO server_msg.py Клиент ('127.0.0.1', 59573) отключился от сервера. 18040
+2022-09-13 12:56:49,607 INFO server_msg.py Клиент ('127.0.0.1', 59574) отключился от сервера. 18040
+2022-09-13 14:39:11,743 DEBUG decorators.py Функция create_parser (), {} Вызов из модуля server.server_msg 21616
+2022-09-13 14:39:11,777 INFO server_msg.py Запущен сервер с портом: 7777, через адрес: .Если адрес не указан, принимаются соединения с любых адресов. 21616
+2022-09-13 14:39:25,358 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 58462) 21616
+2022-09-13 14:39:25,358 DEBUG decorators.py Функция get_msg (<socket.socket fd=336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58462)>,), {} Вызов из модуля utils.config_messages 21616
+2022-09-13 14:39:25,358 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663069165.358791, 'user': {'account_name': 'test'}} 21616
+2022-09-13 14:39:25,377 DEBUG decorators.py Функция send_msg (<socket.socket fd=336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58462)>, {'response': 200}), {} Вызов из модуля utils.config_messages 21616
+2022-09-13 14:40:13,172 DEBUG decorators.py Функция get_msg (<socket.socket fd=336, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 58462)>,), {} Вызов из модуля utils.config_messages 21616
+2022-09-13 14:40:13,172 INFO server_msg.py Клиент ('127.0.0.1', 58462) отключился от сервера. 21616
+2022-09-13 16:42:51,753 DEBUG decorators.py Функция create_parser ('7777', ''), {} Вызов из модуля server.server_msg 24964
+2022-09-13 18:47:30,376 DEBUG decorators.py Функция create_parser ('7777', ''), {} Вызов из модуля server.server_msg 13788
+2022-09-13 18:54:24,943 DEBUG decorators.py Функция create_parser ('7777', ''), {} Вызов из модуля server.server_msg 15016
+2022-09-13 18:56:33,950 DEBUG decorators.py Функция create_parser ('7777', ''), {} Вызов из модуля server.server_msg 21960
+2022-09-13 19:13:31,284 DEBUG decorators.py Функция create_parser ('7777', ''), {} Вызов из модуля server.server_msg 12640
+2022-09-13 19:15:49,665 DEBUG decorators.py Функция create_parser c параметрами ('7777', ''), {} Вызов из модуля server.server_msg 11660
+2022-09-13 19:16:31,285 DEBUG decorators.py Функция create_parser c параметрами ('7777', ''), {} Вызов из модуля server.server_msg 23440
+2022-09-13 19:17:51,229 DEBUG decorators.py Функция create_parser c параметрами ('7777', ''), {} Вызов из модуля server.server_msg 4864
+2022-09-13 19:18:29,262 DEBUG decorators.py Функция create_parser c параметрами ('7777', ''), {} Вызов из модуля server.server_msg 1456
+2022-09-13 19:18:29,285 INFO server_msg.py Запущен сервер с портом: 7777, через адрес: .Если адрес не указан, принимаются соединения с любых адресов. 1456
+2022-09-13 19:18:51,388 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59376) 1456
+2022-09-13 19:18:51,390 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59376)>,), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:18:51,390 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663085931.3889978, 'user': {'account_name': 'test'}} 1456
+2022-09-13 19:18:51,406 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59376)>, {'response': 200}), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:18:51,912 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=152, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59376)>,), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:18:51,912 INFO server_msg.py Клиент ('127.0.0.1', 59376) отключился от сервера. 1456
+2022-09-13 19:19:50,619 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59406) 1456
+2022-09-13 19:19:50,619 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=944, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59406)>,), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:19:50,620 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663085990.6193779, 'user': {'account_name': 'test'}} 1456
+2022-09-13 19:19:50,629 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=944, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59406)>, {'response': 200}), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:19:51,144 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=944, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59406)>,), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:19:51,144 INFO server_msg.py Клиент ('127.0.0.1', 59406) отключился от сервера. 1456
+2022-09-13 19:20:17,888 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59419) 1456
+2022-09-13 19:20:18,394 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=916, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59419)>,), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:20:18,394 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663086017.9013586, 'user': {'account_name': 'test'}} 1456
+2022-09-13 19:20:18,403 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=916, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59419)>, {'response': 200}), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:20:18,912 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=916, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59419)>,), {} Вызов из модуля utils.config_messages 1456
+2022-09-13 19:20:18,912 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'get_users', 'time': 1663086018.420414, 'account_name': 'test'} 1456
+2022-09-13 19:20:18,912 INFO server_msg.py Клиент ('127.0.0.1', 59419) отключился от сервера. 1456
+2022-09-13 19:25:08,439 DEBUG decorators.py Функция create_parser c параметрами ('7777', ''), {} Вызов из модуля server.server_msg 4552
+2022-09-13 19:25:08,460 INFO server_msg.py Запущен сервер с портом: 7777, через адрес: .Если адрес не указан, принимаются соединения с любых адресов. 4552
+2022-09-13 19:25:33,311 DEBUG decorators.py Функция create_parser c параметрами ('7777', ''), {} Вызов из модуля server.server_msg 20132
+2022-09-13 19:25:33,336 INFO server_msg.py Запущен сервер с портом: 7777, через адрес: .Если адрес не указан, принимаются соединения с любых адресов. 20132
+2022-09-13 19:25:51,856 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59594) 20132
+2022-09-13 19:25:51,856 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59594)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:51,856 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663086351.856411, 'user': {'account_name': 'test1'}} 20132
+2022-09-13 19:25:51,876 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59594)>, {'response': 200}), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:51,888 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59595) 20132
+2022-09-13 19:25:51,889 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=924, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59595)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:51,889 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663086351.8884108, 'user': {'account_name': 'test2'}} 20132
+2022-09-13 19:25:51,900 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=924, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59595)>, {'response': 200}), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:51,901 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59596) 20132
+2022-09-13 19:25:51,901 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59596)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:51,901 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663086351.8914123, 'user': {'account_name': 'test3'}} 20132
+2022-09-13 19:25:51,910 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59596)>, {'response': 200}), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:51,910 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 59597) 20132
+2022-09-13 19:25:51,910 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59594)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:51,911 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'get_users', 'time': 1663086351.9074106, 'account_name': 'test1'} 20132
+2022-09-13 19:25:51,911 INFO server_msg.py Клиент ('127.0.0.1', 59594) отключился от сервера. 20132
+2022-09-13 19:25:51,916 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=952, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59597)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:51,916 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663086351.908411, 'user': {'account_name': 'test4'}} 20132
+2022-09-13 19:25:51,926 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=952, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59597)>, {'response': 200}), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:52,439 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=924, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59595)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:52,440 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'get_users', 'time': 1663086351.9304101, 'account_name': 'test2'} 20132
+2022-09-13 19:25:52,440 INFO server_msg.py Клиент ('127.0.0.1', 59595) отключился от сервера. 20132
+2022-09-13 19:25:52,447 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59596)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:52,447 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'get_users', 'time': 1663086351.939411, 'account_name': 'test3'} 20132
+2022-09-13 19:25:52,447 INFO server_msg.py Клиент ('127.0.0.1', 59596) отключился от сервера. 20132
+2022-09-13 19:25:52,452 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=952, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59597)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:25:52,452 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'get_users', 'time': 1663086351.9534106, 'account_name': 'test4'} 20132
+2022-09-13 19:25:52,452 INFO server_msg.py Клиент ('127.0.0.1', 59597) отключился от сервера. 20132
+2022-09-13 19:34:47,120 INFO server_msg.py Установлено соединение с: ('127.0.0.1', 60173) 20132
+2022-09-13 19:34:47,631 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=916, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60173)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:34:47,631 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'presence', 'time': 1663086887.1454556, 'user': {'account_name': 'test'}} 20132
+2022-09-13 19:34:47,641 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=916, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60173)>, {'response': 200}), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:34:48,156 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=916, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60173)>,), {} Вызов из модуля utils.config_messages 20132
+2022-09-13 19:34:48,156 DEBUG server_msg.py Разбор сообщения от пользователя : {'action': 'get_users', 'time': 1663086887.6584485, 'account_name': 'test'} 20132
+2022-09-13 19:34:48,156 INFO server_msg.py Клиент ('127.0.0.1', 60173) отключился от сервера. 20132

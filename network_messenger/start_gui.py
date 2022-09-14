@@ -7,8 +7,6 @@ sys.path.append(os.path.join(os.getcwd(), '..'))
 from utils.settings import *
 
 
-
-
 class Launcher:
 
     def __init__(self, master):
