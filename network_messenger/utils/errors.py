@@ -1,6 +1,4 @@
-class IncorrectDataRecivedError(Exception):
-    def __str__(self):
-        return 'Принято некорректное сообщение от удалённого компьютера.'
+# -*- coding: utf-8 -*-
 
 
 class ServerError(Exception):
@@ -9,11 +7,6 @@ class ServerError(Exception):
 
     def __str__(self):
         return self.text
-
-
-class NonDictInputError(Exception):
-    def __str__(self):
-        return 'Аргумент функции должен быть словарём.'
 
 
 class ReqFieldMissingError(Exception):
