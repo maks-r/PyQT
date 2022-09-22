@@ -1,3 +1,4 @@
+
 import os
 import signal
 import subprocess
@@ -10,7 +11,7 @@ BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 
 def get_subprocess(file_with_args):
-    sleep(0.2)
+    sleep(1)
     file_full_path = f"{PYTHON_PATH} {BASE_PATH}/{file_with_args}"
     args = ["gnome-terminal", "--disable-factory", "--", "bash", "-c", file_full_path]
     return subprocess.Popen(args, preexec_fn=os.setpgrp)
@@ -18,7 +19,7 @@ def get_subprocess(file_with_args):
 
 process = []
 while True:
-    TEXT_FOR_INPUT = "Для запуска клиента нажмите - s, для выхода - q, закрыть окно - x: "
+    TEXT_FOR_INPUT = 'Нажмите: s - запустить сервер, k - запустить клиенты, x - закрыть все окна, q - выход : '
     action = input(TEXT_FOR_INPUT)
 
     if action == "q":
@@ -26,8 +27,13 @@ while True:
     elif action == "s":
         process.append(get_subprocess("run_server.py"))
 
-        for i in range(3):
-            process.append(get_subprocess(f"run_client.py -n test{i+1}"))
+    elif action == 'k':
+        print('Убедитесь, что на сервере зарегистрировано необходимо количество клиентов с паролем 123456.')
+        print('Первый запуск может быть достаточно долгим из-за генерации ключей!')
+        clients_count = int(
+            input('Введите количество тестовых клиентов для запуска: '))
+        for i in range(clients_count):
+            process.append(get_subprocess(f"run_client.py -n test{i + 1} -p 123456"))
 
     elif action == "x":
         while process:

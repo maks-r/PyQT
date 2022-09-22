@@ -137,3 +137,32 @@
 2022-09-18 19:11:33,627 INFO transport.py Попытка подключения №2 25244
 2022-09-18 19:11:36,666 INFO transport.py Попытка подключения №3 25244
 2022-09-18 19:11:39,712 CRITICAL transport.py Не удалось установить соединение с сервером 25244
+2022-09-20 12:36:02,424 INFO transport.py Попытка подключения №1 26456
+2022-09-20 12:36:05,462 INFO transport.py Попытка подключения №2 26456
+2022-09-20 12:36:08,518 INFO transport.py Попытка подключения №3 26456
+2022-09-20 12:36:11,543 CRITICAL transport.py Не удалось установить соединение с сервером 26456
+2022-09-20 13:39:32,166 INFO client_log_config.py Информационное сообщение 1144
+2022-09-20 13:39:32,166 DEBUG client_log_config.py Отладка 1144
+2022-09-20 13:39:32,166 WARNING client_log_config.py Предупреждение 1144
+2022-09-20 13:39:32,166 CRITICAL client_log_config.py Критическая ошибка 1144
+2022-09-20 13:39:32,166 ERROR client_log_config.py Ошибка 1144
+2022-09-22 19:29:54,477 DEBUG run_client.py Args loaded 17128
+2022-09-22 19:30:03,006 DEBUG run_client.py Using USERNAME = mask, PASSWD = 123456. 17128
+2022-09-22 19:30:03,006 INFO run_client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: mask 17128
+2022-09-22 19:30:03,679 DEBUG run_client.py Ключи успешно загружены. 17128
+2022-09-22 19:30:03,711 INFO transport.py Попытка подключения №1 17128
+2022-09-22 19:30:06,765 INFO transport.py Попытка подключения №2 17128
+2022-09-22 19:30:09,806 INFO transport.py Попытка подключения №3 17128
+2022-09-22 19:30:12,838 CRITICAL transport.py Не удалось установить соединение с сервером 17128
+2022-09-22 19:30:22,863 DEBUG run_client.py Args loaded 27244
+2022-09-22 19:30:32,328 DEBUG run_client.py Using USERNAME = mask, PASSWD = 123456. 27244
+2022-09-22 19:30:32,328 INFO run_client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: mask 27244
+2022-09-22 19:30:32,370 DEBUG run_client.py Ключи успешно загружены. 27244
+2022-09-22 19:30:32,388 INFO transport.py Попытка подключения №1 27244
+2022-09-22 19:30:32,388 DEBUG transport.py Соединение установлено 27244
+2022-09-22 19:30:32,388 DEBUG transport.py Запуск диалогового окна авторизации. 27244
+2022-09-22 19:30:32,395 DEBUG transport.py Хэш пароля готов: b'6264dd50f81dcd99e76261e66f7f4a112b8a1433405de4d9eddf5f4b6ce3ea46db3d0e19856933ab76ea1c1618e521f12e198c6dffa5974572fa2adee52cd255' 27244
+2022-09-22 19:30:32,395 DEBUG transport.py Сообщение о присутствии = {'action': 'presence', 'time': 1663864232.39553, 'user': {'account_name': 'mask', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAspsRcA0ygB4XfVGsd1C4\nIN3Q7yUXu5cLVrPx1f3zWNq5ti73B6+zbB8gawmk9kGymzYuOkOtzc/OoDROWv+D\nnZ6kcjRYg3pZvSmtC5qzeIvVYsic4OXXS3Ggno+R673laEqa+eAMwSRk0Rg3Ad28\nG6vP0Wx7TvyGzdYrFp1mfzonNhISMS0/filgmkC0/+nbNJ9bIKxu0jz/2okalmY/\n/fDHMCEcUpqQRW6X6EciaUzpPAYK8lySG1H1T2G+XVIuvmWigQLrF72NB95jVYA/\nLreDENkmUKoye4KPG2z5GCEge50T/DnayNBtinr4q6iDTRmsHqwDw5kABf+WclFz\n6wIDAQAB\n-----END PUBLIC KEY-----'}} 27244
+2022-09-22 19:30:32,904 DEBUG transport.py Ответ сервера = {'response': 511, 'bin': '38d9caabbb2e73a87b28d12a9345241e624087a6ab6101ca65a0c00a240ae0c1d675d9bc322330203833525ff1184996b4d7ae10de4e0f0ccc4ad02be2c60a4c'}. 27244
+2022-09-22 19:30:32,905 DEBUG transport.py Разбор сообщения от сервера: {'response': 200} 27244
+2022-09-22 19:30:32,905 DEBUG transport.py Запрос списка известных пользователей mask 27244

@@ -39,16 +39,17 @@ class DelContactDialog(QDialog):
         self.btn_cancel.setFixedSize(100, 30)
         self.btn_cancel.move(230, 60)
         self.btn_cancel.clicked.connect(self.close)
+        self.selector.addItems(sorted(self.database.get_contacts()))
 
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    from PyQT.network_messenger.client.dbase.database import ClientDatabase
-    database = ClientDatabase('test1')
-    window = DelContactDialog(database)
-    database.add_contact('test1')
-    database.add_contact('test2')
-    print(database.get_contacts())
-    window.selector.addItems(sorted(database.get_contacts()))
+    # from PyQT.network_messenger.client.dbase.database import ClientDatabase
+    # database = ClientDatabase('test1')
+    window = DelContactDialog(None)
+    # database.add_contact('test1')
+    # database.add_contact('test2')
+    # print(database.get_contacts())
+    # window.selector.addItems(sorted(database.get_contacts()))
     window.show()
     app.exec_()

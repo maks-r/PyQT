@@ -63,12 +63,12 @@ class AddContactDialog(QDialog):
             self.possible_contacts_update()
 
 
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    from PyQT.network_messenger.client.dbase.database import ClientDatabase
-    database = ClientDatabase('test1')
-    from transport import ClientTransport
-    transport = ClientTransport(7777, '127.0.0.1', database, 'test1')
-    window = AddContactDialog(transport, database)
-    window.show()
-    app.exec_()
+# if __name__ == '__main__':
+#     app = QApplication(sys.argv)
+#     from PyQT.network_messenger.client.dbase.database import ClientDatabase
+#     database = ClientDatabase('test1')
+#     from transport import ClientTransport
+#     transport = ClientTransport(7777, '127.0.0.1', database, 'test1')
+#     window = AddContactDialog(transport, database)
+#     window.show()
+#     app.exec_()
