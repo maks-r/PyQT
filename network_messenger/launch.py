@@ -1,0 +1,35 @@
+import subprocess
+import os
+import sys
+
+
+def main():
+    process = []
+
+    while True:
+        action = input(
+            'Нажмите: s - запустить сервер, k - запустить клиенты, x - закрыть все окна, q - выход :')
+        if action == 'q':
+            break
+        elif action == 's':
+            process.append(
+                subprocess.Popen(
+                    'python run_server.py',
+                    creationflags=subprocess.CREATE_NEW_CONSOLE))
+        elif action == 'k':
+            print('Убедитесь, что на сервере зарегистрировано необходимо количество клиентов с паролем 123456.')
+            print('Первый запуск может быть достаточно долгим из-за генерации ключей!')
+            clients_count = int(
+                input('Введите количество тестовых клиентов для запуска: '))
+            for i in range(clients_count):
+                process.append(
+                    subprocess.Popen(
+                        f'python run_client.py -n test{i + 1} -p 123456',
+                        creationflags=subprocess.CREATE_NEW_CONSOLE))
+        elif action == 'x':
+            while process:
+                process.pop().kill()
+
+
+if __name__ == '__main__':
+    main()
