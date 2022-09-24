@@ -1,4 +1,3 @@
-
 from PyQt5.QtWidgets import QDialog, QLabel, QLineEdit, QPushButton, QFileDialog, QMessageBox
 from PyQt5.QtCore import Qt
 import os

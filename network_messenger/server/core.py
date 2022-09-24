@@ -1,4 +1,3 @@
-
 import threading
 import logging
 import select
@@ -8,6 +7,7 @@ import hmac
 import binascii
 import os
 import sys
+
 sys.path.append('../')
 from utils.metaclasses import ServerVerifier
 from utils.server_socket_descriptor import Port

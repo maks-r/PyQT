@@ -62,7 +62,6 @@ class AddContactDialog(QDialog):
             LOG.debug('Обновление списка пользователей с сервера выполнено')
             self.possible_contacts_update()
 
-
 # if __name__ == '__main__':
 #     app = QApplication(sys.argv)
 #     from PyQT.network_messenger.client.dbase.database import ClientDatabase

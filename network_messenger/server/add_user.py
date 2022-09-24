@@ -1,4 +1,3 @@
-
 from PyQt5.QtWidgets import QDialog, QPushButton, QLineEdit, QApplication, QLabel, QMessageBox
 from PyQt5.QtCore import Qt
 import hashlib
@@ -87,12 +86,15 @@ class RegisterUser(QDialog):
 if __name__ == '__main__':
     app = QApplication([])
     from dbase.database import ServerStorage
+
     database = ServerStorage('../server_database.db3')
     import os
     import sys
+
     path1 = os.path.join(os.getcwd(), '..')
     sys.path.insert(0, path1)
     from core import MessageProcessor
+
     server = MessageProcessor('127.0.0.1', 7777, database)
     dial = RegisterUser(database, server)
     app.exec_()
