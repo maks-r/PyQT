@@ -1,0 +1,70 @@
+2022-09-22 19:19:24,015 DEBUG decorators.py Функция arg_parser c параметрами (), {} Вызов из модуля __main__ 19428
+2022-09-22 19:21:56,984 DEBUG decorators.py Функция arg_parser c параметрами (), {} Вызов из модуля __main__ 4404
+2022-09-22 19:24:07,795 DEBUG decorators.py Функция main c параметрами (), {} Вызов из модуля __main__ 16456
+2022-09-22 19:24:07,795 DEBUG decorators.py Функция config_load c параметрами (), {} Вызов из модуля __main__ 16456
+2022-09-22 19:24:07,795 DEBUG decorators.py Функция arg_parser c параметрами ('7777', ''), {} Вызов из модуля __main__ 16456
+2022-09-22 19:24:07,799 DEBUG run_server.py Аргументы успешно загружены. 16456
+2022-09-22 19:24:07,843 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 16456
+2022-09-22 19:24:14,748 DEBUG decorators.py Функция arg_parser c параметрами (), {} Вызов из модуля __main__ 24996
+2022-09-22 19:24:40,694 DEBUG decorators.py Функция main c параметрами (), {} Вызов из модуля __main__ 14020
+2022-09-22 19:24:40,694 DEBUG decorators.py Функция config_load c параметрами (), {} Вызов из модуля __main__ 14020
+2022-09-22 19:24:40,695 DEBUG decorators.py Функция arg_parser c параметрами ('7777', ''), {} Вызов из модуля __main__ 14020
+2022-09-22 19:24:40,697 DEBUG run_server.py Аргументы успешно загружены. 14020
+2022-09-22 19:24:40,719 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 14020
+2022-09-22 19:27:25,932 DEBUG decorators.py Функция main c параметрами (), {} Вызов из модуля __main__ 25160
+2022-09-22 19:27:25,932 DEBUG decorators.py Функция config_load c параметрами (), {} Вызов из модуля __main__ 25160
+2022-09-22 19:27:25,932 DEBUG decorators.py Функция arg_parser c параметрами ('7777', ''), {} Вызов из модуля __main__ 25160
+2022-09-22 19:27:25,935 DEBUG run_server.py Аргументы успешно загружены. 25160
+2022-09-22 19:27:25,961 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 25160
+2022-09-22 19:29:05,159 DEBUG decorators.py Функция arg_parser c параметрами (), {} Вызов из модуля __main__ 4404
+2022-09-22 19:29:54,476 DEBUG decorators.py Функция arg_parser c параметрами (), {} Вызов из модуля __main__ 17128
+2022-09-22 19:30:18,065 DEBUG decorators.py Функция main c параметрами (), {} Вызов из модуля __main__ 4076
+2022-09-22 19:30:18,065 DEBUG decorators.py Функция config_load c параметрами (), {} Вызов из модуля __main__ 4076
+2022-09-22 19:30:18,065 DEBUG decorators.py Функция arg_parser c параметрами ('7777', ''), {} Вызов из модуля __main__ 4076
+2022-09-22 19:30:18,067 DEBUG run_server.py Аргументы успешно загружены. 4076
+2022-09-22 19:30:18,092 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 4076
+2022-09-22 19:30:22,862 DEBUG decorators.py Функция arg_parser c параметрами (), {} Вызов из модуля __main__ 27244
+2022-09-22 19:30:32,388 INFO core.py Установлено соедение с ПК ('127.0.0.1', 51819) 4076
+2022-09-22 19:30:32,395 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=1396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51819), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1663864232.39553, 'user': {'account_name': 'mask', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAspsRcA0ygB4XfVGsd1C4\nIN3Q7yUXu5cLVrPx1f3zWNq5ti73B6+zbB8gawmk9kGymzYuOkOtzc/OoDROWv+D\nnZ6kcjRYg3pZvSmtC5qzeIvVYsic4OXXS3Ggno+R673laEqa+eAMwSRk0Rg3Ad28\nG6vP0Wx7TvyGzdYrFp1mfzonNhISMS0/filgmkC0/+nbNJ9bIKxu0jz/2okalmY/\n/fDHMCEcUpqQRW6X6EciaUzpPAYK8lySG1H1T2G+XVIuvmWigQLrF72NB95jVYA/\nLreDENkmUKoye4KPG2z5GCEge50T/DnayNBtinr4q6iDTRmsHqwDw5kABf+WclFz\n6wIDAQAB\n-----END PUBLIC KEY-----'}}), {} Вызов из модуля utils.config_messages 27244
+2022-09-22 19:30:32,396 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=1396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51819), raddr=('127.0.0.1', 7777)>,), {} Вызов из модуля utils.config_messages 27244
+2022-09-22 19:30:32,897 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51819)>,), {} Вызов из модуля utils.config_messages 4076
+2022-09-22 19:30:32,897 DEBUG core.py Разбор сообщения от клиента : {'action': 'presence', 'time': 1663864232.39553, 'user': {'account_name': 'mask', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAspsRcA0ygB4XfVGsd1C4\nIN3Q7yUXu5cLVrPx1f3zWNq5ti73B6+zbB8gawmk9kGymzYuOkOtzc/OoDROWv+D\nnZ6kcjRYg3pZvSmtC5qzeIvVYsic4OXXS3Ggno+R673laEqa+eAMwSRk0Rg3Ad28\nG6vP0Wx7TvyGzdYrFp1mfzonNhISMS0/filgmkC0/+nbNJ9bIKxu0jz/2okalmY/\n/fDHMCEcUpqQRW6X6EciaUzpPAYK8lySG1H1T2G+XVIuvmWigQLrF72NB95jVYA/\nLreDENkmUKoye4KPG2z5GCEge50T/DnayNBtinr4q6iDTRmsHqwDw5kABf+WclFz\n6wIDAQAB\n-----END PUBLIC KEY-----'}} 4076
+2022-09-22 19:30:32,897 DEBUG core.py Start auth process for {'account_name': 'mask', 'pubkey': '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAspsRcA0ygB4XfVGsd1C4\nIN3Q7yUXu5cLVrPx1f3zWNq5ti73B6+zbB8gawmk9kGymzYuOkOtzc/OoDROWv+D\nnZ6kcjRYg3pZvSmtC5qzeIvVYsic4OXXS3Ggno+R673laEqa+eAMwSRk0Rg3Ad28\nG6vP0Wx7TvyGzdYrFp1mfzonNhISMS0/filgmkC0/+nbNJ9bIKxu0jz/2okalmY/\n/fDHMCEcUpqQRW6X6EciaUzpPAYK8lySG1H1T2G+XVIuvmWigQLrF72NB95jVYA/\nLreDENkmUKoye4KPG2z5GCEge50T/DnayNBtinr4q6iDTRmsHqwDw5kABf+WclFz\n6wIDAQAB\n-----END PUBLIC KEY-----'} 4076
+2022-09-22 19:30:32,900 DEBUG core.py Correct username, starting passwd check. 4076
+2022-09-22 19:30:32,903 DEBUG core.py Auth message = {'response': 511, 'bin': '38d9caabbb2e73a87b28d12a9345241e624087a6ab6101ca65a0c00a240ae0c1d675d9bc322330203833525ff1184996b4d7ae10de4e0f0ccc4ad02be2c60a4c'} 4076
+2022-09-22 19:30:32,903 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51819)>, {'response': 511, 'bin': '38d9caabbb2e73a87b28d12a9345241e624087a6ab6101ca65a0c00a240ae0c1d675d9bc322330203833525ff1184996b4d7ae10de4e0f0ccc4ad02be2c60a4c'}), {} Вызов из модуля utils.config_messages 4076
+2022-09-22 19:30:32,904 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51819)>,), {} Вызов из модуля utils.config_messages 4076
+2022-09-22 19:30:32,904 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=1396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51819), raddr=('127.0.0.1', 7777)>, {'response': 511, 'bin': 'dD+s6VKI0pRVye6GZK66nA==\n'}), {} Вызов из модуля utils.config_messages 27244
+2022-09-22 19:30:32,905 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51819)>, {'response': 200}), {} Вызов из модуля utils.config_messages 4076
+2022-09-22 19:30:32,905 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=1396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51819), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1663864232.9055285, 'account_name': 'mask'}), {} Вызов из модуля utils.config_messages 27244
+2022-09-22 19:30:32,905 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=1396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51819), raddr=('127.0.0.1', 7777)>,), {} Вызов из модуля utils.config_messages 27244
+2022-09-22 19:30:33,428 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51819)>,), {} Вызов из модуля utils.config_messages 4076
+2022-09-22 19:30:33,428 DEBUG core.py Разбор сообщения от клиента : {'action': 'get_users', 'time': 1663864232.9055285, 'account_name': 'mask'} 4076
+2022-09-22 19:30:33,429 DEBUG decorators.py Функция send_msg c параметрами (<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51819)>, {'response': 202, 'data_list': ['ivan', 'mask', 'den']}), {} Вызов из модуля utils.config_messages 4076
+2022-09-22 19:30:33,932 DEBUG decorators.py Функция get_msg c параметрами (<socket.socket fd=1508, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51819)>,), {} Вызов из модуля utils.config_messages 4076
+2022-09-22 19:30:33,932 DEBUG core.py Getting data from client exception. 4076
+Traceback (most recent call last):
+  File "D:\Учеба\Сетевой чат\Базы данных и PyQT\PyQT\PyQT\network_messenger\server\core.py", line 91, in run
+    get_msg(client_with_message), client_with_message)
+  File "D:\Учеба\Сетевой чат\Базы данных и PyQT\PyQT\PyQT\network_messenger\utils\decorators.py", line 19, in decorated
+    res = func(*args, **kwargs)
+  File "D:\Учеба\Сетевой чат\Базы данных и PyQT\PyQT\PyQT\network_messenger\utils\config_messages.py", line 13, in get_msg
+    response = json.loads(json_response)
+  File "C:\Users\maksr\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\maksr\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\maksr\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2022-09-22 19:30:33,941 INFO core.py Клиент ('127.0.0.1', 51819) отключился от сервера. 4076
+2022-09-22 19:46:33,860 DEBUG decorators.py Функция main c параметрами (), {} Вызов из модуля __main__ 17008
+2022-09-22 19:46:33,861 DEBUG decorators.py Функция config_load c параметрами (), {} Вызов из модуля __main__ 17008
+2022-09-22 19:46:33,861 DEBUG decorators.py Функция arg_parser c параметрами ('7777', ''), {} Вызов из модуля __main__ 17008
+2022-09-22 19:46:33,863 DEBUG run_server.py Аргументы успешно загружены. 17008
+2022-09-22 19:46:33,885 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 17008
+2022-09-22 19:46:45,583 DEBUG decorators.py Функция main c параметрами (), {} Вызов из модуля __main__ 7360
+2022-09-22 19:46:45,583 DEBUG decorators.py Функция config_load c параметрами (), {} Вызов из модуля __main__ 7360
+2022-09-22 19:46:45,584 DEBUG decorators.py Функция arg_parser c параметрами ('7777', ''), {} Вызов из модуля __main__ 7360
+2022-09-22 19:46:45,586 DEBUG run_server.py Аргументы успешно загружены. 7360
+2022-09-22 19:46:45,610 INFO core.py Запущен сервер, порт для подключений: 7777 , адрес с которого принимаются подключения: . Если адрес не указан, принимаются соединения с любых адресов. 7360
